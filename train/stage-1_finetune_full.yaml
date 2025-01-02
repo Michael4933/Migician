@@ -1,0 +1,47 @@
+### model
+model_name_or_path: /home/liyou/opensource_models/qwen2-vl-7b
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json
+print_param_status: false
+freeze_vision_tower: true
+
+### dataset
+dataset: pretrain_data 
+template: qwen2_vl
+
+# non-streaming mode
+cutoff_len: 6000
+max_samples: 1100000
+overwrite_cache: true
+preprocessing_num_workers: 128
+num_train_epochs: 1.0
+
+# stream mode
+# buffer_size: 1024
+# cutoff_len: 6000
+# preprocessing_num_workers: 64
+# streaming: true
+# mix_strategy: interleave_over
+# max_steps: 20916
+# accelerator_config:
+#   dispatch_batches: false
+
+### output
+output_dir: Your_output_path
+logging_steps: 1
+save_steps: 1000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 3
+learning_rate: 5.0e-6
+lr_scheduler_type: cosine
+warmup_ratio: 0.015
+bf16: true
+ddp_timeout: 180000000
