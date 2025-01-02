@@ -26,7 +26,7 @@ The recent advancement of Multimodal Large Language Models (MLLMs) has significa
 
 ## 😮 Top Multi-image Grounding Capacity
 <p align="center">
-<img src="figs/radar.png" width=100%>
+<img src="figs/radar1.png" width=100%>
 </p>
 <p align="center">
 <img src="figs/multi_general.png" width=100%>
