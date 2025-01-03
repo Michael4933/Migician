@@ -1,4 +1,8 @@
-# <img src="figs/logo.png" style="width: 20%"> Migician: Revealing the Magic of Free-Form Multi-Image Grounding in Multimodal Large Language Models
+<p align="center">
+<img src="figs/logo.png" style="width: 30%"> 
+</p>
+
+# Migician: Revealing the Magic of Free-Form Multi-Image Grounding in Multimodal Large Language Models
 [You Li](https://openreview.net/profile?id=~You_Li9), [Heyu Huang](https://openreview.net/profile?id=~Heyu_Huang2)*, [Chen Chi](https://openreview.net/profile?id=~Chi_Chen1), [Kaiyu Huang](https://openreview.net/profile?id=~Kaiyu_Huang1), Chao Huang, Zonghao Guo, Zhiyuan Liu, Jinan Xu, Yuhua Li, Ruixuan Li, Maosong Sun
 
 -----
