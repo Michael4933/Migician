@@ -139,7 +139,7 @@ migician/
 ### 3. Inference and Evaluation <a href='#all_catelogue'>[Back to Top]</a>
 
 #### Inference
-Migician is finetuned on [Qwen2-vl-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) through a progressive two-stage training process. You can conduct multi-image grounding together with Migician through the [following code](https://github.com/QwenLM/Qwen2-VL).
+Migician is finetuned on [Qwen2-vl-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) through a progressive two-stage training process. You can conduct multi-image grounding together with Migician through the following code.
 <p align="center">
 <img src="figs/multi_view_all.png" width=100%>
 </p>
