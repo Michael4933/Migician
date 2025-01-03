@@ -21,7 +21,7 @@ This repository hosts the dataset/benchmark utilization, training implementation
 ## 📰 News
 * **[2024.02.16]**  🥳🥳🥳 Our [Paper](https://arxiv.org/abs/2411.03628) has been accepted by ACL2025 as a Oral Paper!
 * **[2025.01.09]**  🌷🌷🌷 We have further released our multi-image grounding training dataset [MGrounding_630k](https://huggingface.co/datasets/Michael4933/MGrounding-630k) and our comprehensive multi-image grounding benchmark [MIG-Bench](https://huggingface.co/datasets/Michael4933/MIG-Bench) on Huggingface🤗~ Feel free to download and apply for your own use.
-* **[2025.01.05]**  🌟🌟🌟 The model weight is now available on HuggingFace! 🤗 [Huggingface Model](https://huggingface.co/Michael4933/Migician) Come and have a try!
+* **[2025.01.05]**  🌟🌟🌟 The model weight is now available on HuggingFace! 🤗 Come and have a try at [Huggingface Model](https://huggingface.co/Michael4933/Migician)!
 * **[2025.01.02]** 🌞🌞🌞 We have released our paper on [Arxiv](https://arxiv.org/abs/2411.03628) at the start of the new year!
 
 ## 📝 Abstract
