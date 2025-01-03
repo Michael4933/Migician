@@ -90,7 +90,7 @@ The download code of huggingface in provided in `./data/download.py`, which real
                 "value": "It's in the first image. <|box_start|>(408,656),(578,997)<|box_end|>"
             }
         ],
-        "type": "group_grounding"
+        "type": "gg_train"
     }
 ```
 The final code structure is show as follows:
