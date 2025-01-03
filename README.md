@@ -42,20 +42,12 @@ Migician surpasses much larger 70B scale model over all tasks on MIG-Bench by a 
 <span id='all_catelogue'/>
 
 ### Table of Contents:
-* <a href='#Code Structure'>1. Code Structure</a>
-* <a href='#Environment Preparation'>2. Environment Preparation </a>
-* <a href='#Training on Your Own'>3. Training/Adapting NExt-GPT on Your Own</a>
-  * <a href='#Prepare Pre-trained Checkpoint'>3.1. Preparing Pre-trained Checkpoint</a>
-  * <a href='#Prepare Dataset'>3.2. Preparing Dataset </a>
-  * <a href='#Precompute Embeddings'>3.3. Precomputing Embeddings</a>
-  * <a href='#Train NExT-GPT'>3.4. Training NExT-GPT</a>
-* <a href='#Run NExT-GPT System'>4. Running NExT-GPT System</a>
-  * <a href='#Prepare checkpoints'>4.1. Preparing checkpoints</a>
-  * <a href='#Deploy Demo System'>4.2. Deploying Demo System</a>
-* <a href='#Tuning your own system'>5. Fine-tuning your own System</a>
-  * <a href='#Tuning your own dataset'>5.1. Dataset</a>
-  * <a href='#Tuning your own framework'>5.2. Model Framework</a>
-  * <a href='#Tuning script'>5.3. Fine-tuning</a>
+* <a href='#Environment'>1. Environment</a>
+* <a href='#Data Preparation'>2. Data Preparation </a>
+* <a href='#Inference and Evaluation'>3. Inference and Evaluation</a>
+  * <a href='#Inference'>3.1. Inference</a>
+  * <a href='#Evaluation'>3.2. Evaluation </a>
+* <a href='#Finetune'>4. Finetune</a>
   
 
 <span id='Environment'/>
@@ -279,6 +271,7 @@ You can conduct one-hit evaluation for 🤩🤩🤩seven different models[[Migic
 
 
 <span id='Finetune'/>
+
 ### 4. Finetune
 Our two-stage training process is conducted mainly based on 🏭🏭🏭[Llamafactory](https://github.com/hiyouga/LLaMA-Factory), where the whole LLM backbone parameters are finetuned.
 We provide our training script for these two stages and the requirements.txt file.
