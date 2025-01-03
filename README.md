@@ -276,7 +276,7 @@ You can conduct one-hit evaluation for 🤩🤩🤩<strong>SEVEN</strong> differ
 Our two-stage training process is conducted mainly based on 🏭🏭🏭[Llamafactory](https://github.com/hiyouga/LLaMA-Factory), where the whole LLM backbone parameters are finetuned.
 We provide our training script for these two stages and the requirements.txt file.
 ```
-migician/
+Migician/
 ├── train/
 │   ├── stage-1_finetune_full.yaml
 │   ├── stage-2_finetune_full.yaml
