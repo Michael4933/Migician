@@ -45,7 +45,7 @@ Migician not only exhibits superior performance than much larger 70B models in g
 
 ### 1. Environment  <a href='#all_catelogue'>[Back to Top]</a>
 To establish the code environment, please follow the commands below.
-Note, the training process is based on [Llama-fatory](https://github.com/hiyouga/LLaMA-Factory), where another set of environment configuration is more convenient for avoiding conflicts.
+Note, the training process is based on 🏭🏭🏭[Llama-fatory](https://github.com/hiyouga/LLaMA-Factory), where another set of environment configuration is more convenient for avoiding conflicts.
 ```
 conda env create -n migician_train python=3.10
 conda env create -n migician_eval python=3.10
@@ -251,7 +251,7 @@ Note: the answer is normalized as relative position within 0-1, following the x1
 You can start one-hit evaluation for eight different models by running the MIG_bench_eval.py script, which reports IOU@0.7, IOU@0.5, IOU@0.3 and ave-iou scores. We further facilitate the evaluation for 🤗[MIBench](https://huggingface.co/datasets/StarBottle/MIBench) and 🤗[MMIU](https://huggingface.co/MMIUBenchmark/MMIU/tree/main) in MIG_bench_eval.py for different models.
 
 #### Finetune
-Our two-stage training process is conducted based on [Llamafactory](https://github.com/hiyouga/LLaMA-Factory), where the whole LLM backbone parameters are finetuned.
+Our two-stage training process is conducted based on 🏭🏭🏭[Llamafactory](https://github.com/hiyouga/LLaMA-Factory), where the whole LLM backbone parameters are finetuned.
 We provide our training script for these two stages and the requirements.txt file.
 ```
 migician/
