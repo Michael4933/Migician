@@ -246,9 +246,8 @@ Migician/
 
 Each testing example is formatted as below, which includes the key informantion such as task class label, image paths, question and ground truth.
 > [!NOTE]
-> The groundtruth coordinates are normalized as float within 0-1, following the `x1 y1 x2 y2`` and relative position format.
->
-> Please ensure that you have sufficient hard disk storage and a stable internet connection.
+> The groundtruth coordinates are normalized as float within 0-1, following the `x1 y1 x2 y2` format.
+> The numerical numbers are relative positions regarding the width and height of the whole image.
 ```
 {
         "task": "reasoning",
