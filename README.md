@@ -143,6 +143,7 @@ Migician is finetuned on [Qwen2-vl-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-I
 <p align="center">
 <img src="figs/multi_view_all.png" width=100%>
 </p>
+
 ```
 from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
