@@ -26,7 +26,7 @@ The recent advancement of Multimodal Large Language Models (MLLMs) has significa
 
 ## 😮 Top Multi-image Grounding Capacity
 <p align="center">
-<img src="figs/radar1.png" width=100%>
+<img src="figs/radar.png" width=100%>
 </p>
 <p align="center">
 <img src="figs/multi_general.png" width=100%>
@@ -38,9 +38,9 @@ Migician not only exhibits superior performance than much larger 70B models in g
 
 ### Table of Contents:
 
-### 1. 🔨 Environment  <a href='#all_catelogue'>[Back to Top]</a>
+### 1. Environment  <a href='#all_catelogue'>[Back to Top]</a>
 To establish the code environment, please follow the commands below.
-Note, the training process is based on 🏭[Llama-fatory](https://github.com/hiyouga/LLaMA-Factory), where another set of environment configuration is more convenient for avoiding conflicts.
+Note, the training process is based on [Llama-fatory](https://github.com/hiyouga/LLaMA-Factory), where another set of environment configuration is more convenient for avoiding conflicts.
 ```
 conda env create -n migician_train python=3.10
 conda env create -n migician_eval python=3.10
@@ -55,7 +55,7 @@ conda activate migician_train
 pip install -r train/requirements.txt # for model finetuning
 ```
 
-### 2. 🗂 Data Preparation <a href='#all_catelogue'>[Back to Top]</a>
+### 2. Data Preparation <a href='#all_catelogue'>[Back to Top]</a>
 We have uploaded our training dataset on [Huggingface](https://huggingface.co/datasets/Michael4933/MGrounding-630k) and organized it in a clear way.
 You can download it at `./data/MGrounding-630k` and unzip the corresponding subsets. We provide all the textual conversation data at `./data/MGrounding-630k/MGrounding-630k.json` in the following format, where each training example is labeled with its corresponding sub-task class.
 The download code of huggingface in provided in `./data/download.py`, which realizes one-hit quick download.
@@ -136,10 +136,13 @@ migician/
 ...
 ```
 
-### 3. ✏️ Inference and Evaluation <a href='#all_catelogue'>[Back to Top]</a>
+### 3. Inference and Evaluation <a href='#all_catelogue'>[Back to Top]</a>
 
 #### Inference
-Migician is finetuned on [Qwen2-vl-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) through a progressive two-stage training process. You can conduct multi-image grounding together with Migician through the [following code](https://github.com/QwenLM/Qwen2-VL):
+Migician is finetuned on [Qwen2-vl-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) through a progressive two-stage training process. You can conduct multi-image grounding together with Migician through the [following code](https://github.com/QwenLM/Qwen2-VL).
+<p align="center">
+<img src="figs/multi_view_all.png" width=100%>
+</p>
 ```
 from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
@@ -158,14 +161,25 @@ messages = [
         "content": [
             {
                 "type": "image",
-                "image": "/home/liyou/benchmark/case_study/images/case001/7a449d0779198ae856333adf709d83a.png",
+                "image": resize("./figs/multi_view_1.png"),
             },
             {
                 "type": "image",
-                "image": "/home/liyou/benchmark/case_study/images/case001/7a449d0779198ae856333adf709d83a.png",
+                "image": resize("./figs/multi_view_2.png"),
             },
-            {"type": "text", "text": "Describe this image."},
-        ],
+            {
+                "type": "image",
+                "image": resize("./figs/multi_view_3.png"),
+            },
+            {
+                "type": "image",
+                "image": resize("./figs/multi_view_4.png"),
+            },
+            {
+                "type": "text",
+                "text": "Please recognize <|object_ref_start|>the common person appearing in all these images<|object_ref_end|> and locate this person in all these image."
+            }
+        ]
     }
 ]
 
@@ -230,8 +244,8 @@ Note: the answer is normalized as relative position within 0-1, following the x1
 ```
 You can start one-hit evaluation for eight different models by running the MIG_bench_eval.py script, which reports IOU@0.7, IOU@0.5, IOU@0.3 and ave-iou scores. We further facilitate the evaluation for 🤗[MIBench](https://huggingface.co/datasets/StarBottle/MIBench) and 🤗[MMIU](https://huggingface.co/MMIUBenchmark/MMIU/tree/main) in MIG_bench_eval.py for different models.
 
-### 4. 🛠️ Finetune
-Our two-stage training process is conducted based on 🏭[Llamafactory](https://github.com/hiyouga/LLaMA-Factory), where the whole LLM backbone parameters are finetuned.
+#### Finetune
+Our two-stage training process is conducted based on [Llamafactory](https://github.com/hiyouga/LLaMA-Factory), where the whole LLM backbone parameters are finetuned.
 We provide our training script for these two stages and the requirements.txt file.
 ```
 migician/
