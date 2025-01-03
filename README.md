@@ -162,7 +162,7 @@ An example structure for training data:
 <span id='Inference'/>
 
 #### Inference
-As mentioned in the paper, 🎩Migician is finetuned on [Qwen2-vl-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) through a progressive two-stage training process with massive amount of data on 8*A100-80G. You can feel the 🪄magic of multi-image grounding through the following code.
+As mentioned in the paper, 🎩🎩🎩Migician is finetuned on [Qwen2-VL-7B](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) through a progressive two-stage training process with massive amount of data on 8*A100-80G. You can feel the 🪄🪄🪄magic of multi-image grounding through the following code.
 
 <p align="center">
 <img src="figs/multi_view_all.png" width=100%>
@@ -272,7 +272,7 @@ You can conduct one-hit evaluation for 🤩🤩🤩<strong>SEVEN</strong> differ
 
 <span id='Finetune'/>
 
-### 4. Finetune
+### 4. Finetune  <a href='#all_catelogue'>[Back to Top]</a>
 Our two-stage training process is conducted mainly based on 🏭🏭🏭[Llamafactory](https://github.com/hiyouga/LLaMA-Factory), where the whole LLM backbone parameters are finetuned.
 We provide our training script for these two stages and the requirements.txt file.
 ```
@@ -282,6 +282,7 @@ Migician/
 │   ├── stage-2_finetune_full.yaml
 │   ├── requirements.txt
 ```
+
 
 ## 📝 Citation
 ```bibtex
