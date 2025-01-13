@@ -9,7 +9,7 @@
 
 <a href='https://michael4933.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 <a href='#'><img src='https://img.shields.io/badge/Demo-Page-purple'></a> 
-<a href='https://arxiv.org/abs/2411.03628'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
+<a href='https://arxiv.org/abs/2501.05767'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 <a href='https://huggingface.co/Michael4933/Migician'><img src='https://img.shields.io/badge/Model-Huggingface-red'></a> 
 <a href='https://huggingface.co/datasets/Michael4933/MIG-Bench'><img src='https://img.shields.io/badge/Benchmark-Huggingface-yellow'></a> 
 <a href='https://huggingface.co/datasets/Michael4933/MGrounding-630k'><img src='https://img.shields.io/badge/Dataset-Huggingface-blue'></a> 
@@ -19,7 +19,7 @@ This repository hosts the usage details of our training dataset <strong>MGroundi
 -----------
 
 ## 📰 News
-* **[2024.02.16]**  🥳🥳🥳 Our [Paper](https://arxiv.org/abs/2501.05767) has been accepted by ACL2025 as a Oral Paper!
+* **[2024.05.16]**  🥳🥳🥳 Our [Paper](https://arxiv.org/abs/2501.05767) has been accepted by ACL2025 as a Oral Paper!
 * **[2025.01.13]**  🌷🌷🌷 We have further released our multi-image grounding training dataset [MGrounding_630k](https://huggingface.co/datasets/Michael4933/MGrounding-630k) and our comprehensive multi-image grounding benchmark [MIG-Bench](https://huggingface.co/datasets/Michael4933/MIG-Bench) on Huggingface🤗~ Feel free to download and apply for your own use.
 * **[2025.01.12]**  🌟🌟🌟 The model weight is now available on HuggingFace! 🤗 Download and have a try at [Huggingface Model](https://huggingface.co/Michael4933/Migician)!
 * **[2025.01.10]** 🌞🌞🌞 We have released our paper on [Arxiv](https://arxiv.org/abs/2501.05767) at the start of the new year!
