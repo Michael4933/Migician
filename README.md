@@ -19,10 +19,10 @@ This repository hosts the usage details of our training dataset <strong>MGroundi
 -----------
 
 ## 📰 News
-* **[2024.02.16]**  🥳🥳🥳 Our [Paper](https://arxiv.org/abs/2411.03628) has been accepted by ACL2025 as a Oral Paper!
-* **[2025.01.09]**  🌷🌷🌷 We have further released our multi-image grounding training dataset [MGrounding_630k](https://huggingface.co/datasets/Michael4933/MGrounding-630k) and our comprehensive multi-image grounding benchmark [MIG-Bench](https://huggingface.co/datasets/Michael4933/MIG-Bench) on Huggingface🤗~ Feel free to download and apply for your own use.
-* **[2025.01.05]**  🌟🌟🌟 The model weight is now available on HuggingFace! 🤗 Download and have a try at [Huggingface Model](https://huggingface.co/Michael4933/Migician)!
-* **[2025.01.02]** 🌞🌞🌞 We have released our paper on [Arxiv](https://arxiv.org/abs/2411.03628) at the start of the new year!
+* **[2024.02.16]**  🥳🥳🥳 Our [Paper](https://arxiv.org/abs/2501.05767) has been accepted by ACL2025 as a Oral Paper!
+* **[2025.01.13]**  🌷🌷🌷 We have further released our multi-image grounding training dataset [MGrounding_630k](https://huggingface.co/datasets/Michael4933/MGrounding-630k) and our comprehensive multi-image grounding benchmark [MIG-Bench](https://huggingface.co/datasets/Michael4933/MIG-Bench) on Huggingface🤗~ Feel free to download and apply for your own use.
+* **[2025.01.12]**  🌟🌟🌟 The model weight is now available on HuggingFace! 🤗 Download and have a try at [Huggingface Model](https://huggingface.co/Michael4933/Migician)!
+* **[2025.01.10]** 🌞🌞🌞 We have released our paper on [Arxiv](https://arxiv.org/abs/2501.05767) at the start of the new year!
 
 ## 📝 Abstract
 
@@ -286,10 +286,10 @@ Migician/
 
 ## 📝 Citation
 ```bibtex
-@article{lin2024streaming,
-  title={StreamingBench: Assessing the Gap for MLLMs to Achieve Streaming Video Understanding},
-  author={Junming Lin and Zheng Fang and Chi Chen and Zihao Wan and Fuwen Luo and Peng Li and Yang Liu and Maosong Sun},
-  journal={arXiv preprint arXiv:2411.03628},
-  year={2024}
+@misc{li2025migicianrevealingmagicfreeform,
+      title={Migician: Revealing the Magic of Free-Form Multi-Image Grounding in Multimodal Large Language Models}, 
+      author={You Li and Heyu Huang and Chi Chen and Kaiyu Huang and Chao Huang and Zonghao Guo and Zhiyuan Liu and Jinan Xu and Yuhua Li and Ruixuan Li and Maosong Sun},
+      year={2025},
+      url={https://arxiv.org/abs/2501.05767}, 
 }
 ```
