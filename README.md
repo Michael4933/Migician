@@ -19,7 +19,7 @@ This repository hosts the usage details of our training dataset <strong>MGroundi
 -----------
 
 ## 📰 News
-* **[2025.01.13]**  🌷🌷🌷 We have further released our massive multi-image grounding training dataset [MGrounding_630k](https://huggingface.co/datasets/Michael4933/MGrounding-630k) and our comprehensive multi-image grounding benchmark [MIG-Bench](https://huggingface.co/datasets/Michael4933/MIG-Bench) on Huggingface🤗~ Feel free to download and apply them for your own use.
+* **[2025.01.13]**  🌷🌷🌷 We have further released our massive multi-image grounding training dataset [MGrounding_630k](https://huggingface.co/datasets/Michael4933/MGrounding-630k) and our multi-image grounding benchmark [MIG-Bench](https://huggingface.co/datasets/Michael4933/MIG-Bench) on Huggingface🤗~ Feel free to download and apply them for your own use.
 * **[2025.01.12]**  🌟🌟🌟 The model weights are now available on HuggingFace! 🤗 Download and have a try at [Huggingface Model](https://huggingface.co/Michael4933/Migician)!
 * **[2025.01.10]** 🌞🌞🌞 We have released our paper on [Arxiv](https://arxiv.org/abs/2501.05767) at the start of the new year!
 
